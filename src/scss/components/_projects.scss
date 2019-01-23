@@ -1,0 +1,37 @@
+.projects {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  &-grid {
+    background-color: white;
+    height: 100%;
+    margin-right: 10px;
+    width: calc(100% * 5 / 7 - 10px);
+
+    &-search {
+      height: 80px;
+      width: 100%;
+
+      background-color: red;
+    }
+
+    &-body {
+      max-height: calc(100% - 80px);
+      overflow: auto;
+    }
+  }
+
+  &-activity {
+    background-color: white;
+    height: 100%;
+    width: calc(100% * 2 / 7);
+
+    max-height: 100%;
+    overflow: auto;
+  }
+}
+
+p {
+  word-wrap: break-word;
+}

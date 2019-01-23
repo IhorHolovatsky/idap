@@ -1,102 +1,13 @@
 @import "variables";
+@import "components/index.scss";
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
 }
-//USER_BAR
-.bar__user_wrapper{
-  position: fixed;
-  left: 0;
-  height: 100vh;
-  width: 120px;
-  background-color:$color_light_black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.bar__user_inf{
-  position: absolute;
-  top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.bar__avatar_wrapper{
-  width: 80px;
-  height: 80px;
-  background-color: $color_blue;
-  border-radius: 50%;
-  position: relative;
-  margin-bottom: 20px;
-}
 
-.avatar__photo{
-  top: -4px;
-  width: 88px;
-  height: 89px;
-  position: absolute;
-  left: -4px;
-}
-.bar__avatar_inf{
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  background-color: #ff503f;
-  position: absolute;
-  top: -5px;
-  right: -3px;
-  &_number{
-    color: $color_wight;
-    padding-top: 4px;
-    padding-left: 9px;
-  }
-}
-.bar__board_wrapper{
-  margin-top: 25px;
-
-}
-.bar__board{
-  fill:red;
-}
-//NAV-BAR
-.nav__bar_wrapper{
-  position: fixed;
-  top: 0;
-  left: 120px;
+.content {
   width: 100%;
-  height: 90px;
-  border-bottom: 2px solid $color_gray;
-  background-color: $color_light_gray;
-  display: flex;
-}
-//ACTIVE_BAR
-.bar__active_wrapper{
-  position: fixed;
-  top: 90px;
-  left: 120px;
-  width: 100%;
-  height: 70px;
-  background-color: $color_light_gray;
-  display: flex;
-}
-//MESSENGER BAR
-.bar__messenger_wrapper{
-  position: fixed;
-  top: 190px;
-  right: 20px;
-  height: 100vh;
-  width: 295px;
-  border: 2px solid $color_gray;
-}
-//PROJECT BAR
-.bar__project_wrapper{
-  position: fixed;
-  top:190px;
-  left: 150px;
-  height: 100vh;
-  width: 885px;
-  border: 2px solid $color_gray;
+  height: 100%;
+  overflow: hidden;
 }

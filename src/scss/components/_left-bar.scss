@@ -1,0 +1,63 @@
+.left-bar {
+  width: 100px;
+  height: 100vh;
+  background-color: #414141;
+  display: inline-block;
+  position: fixed;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    & > div {
+      flex-direction: column;
+
+      & > div {
+        &:not(:first-child)::before {
+          content: "...";
+          position: absolute;
+          top: -50px;
+          color: gray;
+          font-size: 50px;
+        }
+        border-left: 2px transparent solid;
+        position: relative;
+        height: 85px;
+        padding: 0 10px;
+        margin: 20px 0;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+
+        span {
+          color: gray;
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  &-content > div > div:hover,
+  &-active {
+    fill: red;
+    color: white;
+
+    span {
+      color: white !important;
+    }
+  }
+  &-active {
+    border-left: 2px solid red !important;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+}

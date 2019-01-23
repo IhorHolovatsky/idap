@@ -1,0 +1,18 @@
+$tabsHeight: 65px;
+
+.tabs {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: azure;
+
+  &-navigation {
+    height: $tabsHeight;
+    background-color: red;
+  }
+
+  &-body {
+    background-color: hotpink;
+    padding: 20px;
+    height: calc(100% - 65px);
+  }
+}
